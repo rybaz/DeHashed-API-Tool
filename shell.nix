@@ -13,7 +13,7 @@
 
     shellHook = ''
     	printf "===================================================================\n"
-    	printf "Now entering a devshell for DeHashed-API-Tool...n"
+    	printf "Now entering a devshell for DeHashed-API-Tool...\n"
     	printf "===================================================================\n"
 	'';
 }
