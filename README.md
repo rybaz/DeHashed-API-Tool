@@ -7,7 +7,7 @@ A command-line tool to query the Dehashed API. Easily search for various paramet
 - Fetch unique password results.
 - Silent output mode for minimal console output.
 
-## Installation
+## Installation (pip)
 ### Prerequisites
 1. Ensure you have Python 3.x installed.
 2. A valid DeHashed account, API key, and paid API credits are required.
@@ -22,7 +22,30 @@ cd DeHashed-API-Tool
 2. Install the required packages:
 `pip install -r requirements.txt`
 
+3. Create your own configuration file from the template:
+`cp config.txt.example config.txt`
+
+4. Change the `<email>` and `<api-key>` in the `config.txt` file to your DeHashed account email and API key.  Ensure you remove the `<>` placeholders.
+
+## Installation (Nix)
+### Prerequisites
+1. Ensure you have Nix installed.
+2. A valid DeHashed account, API key, and paid API credits are required.
+
+### Steps
+1. Clone this repository:
+```
+git clone https://github.com/hmaverickadams/DeHashed-API-Tool.git
+cd DeHashed-API-Tool
+```
+
+2. Create your own configuration file from the template:
+`cp config.txt.example config.txt`
+
 3. Change the `<email>` and `<api-key>` in the `config.txt` file to your DeHashed account email and API key.  Ensure you remove the `<>` placeholders.
+
+4. Activate the Nix devshell:
+`nix develop`
 
 ## Usage
 ### Running the tool:
